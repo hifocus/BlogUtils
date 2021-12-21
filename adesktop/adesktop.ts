@@ -1,5 +1,5 @@
 function importAd(pub_id, platform) {
-    if (typeof pub_id !== 'undefined' || pub_id === null) {
+    if (typeof pub_id == 'undefined' || pub_id === null) {
         console.error('Publisher ID is undefined, the script will not run.') // throw an error if the publisher ID is undefined
     }
     else {
