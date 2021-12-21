@@ -37,7 +37,7 @@ jobs:
           npm run dev
           git config --local user.email "i@focuschen.com"
           git config --local user.name "hifocus"
-          git add ./adesktop/dist/*
+          git add dist/*
           git commit -m "complete auto-compile task"
           
       - name: Push changes
