@@ -5,7 +5,7 @@
   "main": "/dist/adesktop.min.js",
   "scripts": {
     "test": "tsc",
-    "dev": "tsc && uglifyjs --compress --"
+    "dev": "tsc && google-closure-compiler --js dist/adesktop.js --js_output_file adesktop.min.js"
   },
   "repository": {
     "type": "git",
