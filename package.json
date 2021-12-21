@@ -1,0 +1,24 @@
+{
+  "name": "adestop",
+  "version": "1.0.0",
+  "description": "Simple code to run Adsense on desktop only",
+  "main": "adesktop.js",
+  "scripts": {
+    "test": "tsc",
+    "dev": "tsc && uglifyjs --compress --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hifocus/adesktop.js.git"
+  },
+  "author": "@hifocus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hifocus/adesktop.js/issues"
+  },
+  "homepage": "https://github.com/hifocus/adesktop.js#readme",
+  "dependencies": {
+    "google-closure-compiler": "^20211201.0.0",
+    "typescript": "^4.5.4"
+  }
+}
