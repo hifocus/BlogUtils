@@ -2,7 +2,7 @@
   "name": "adesktop",
   "version": "1.0.0",
   "description": "Simple code to run Adsense on desktop only",
-  "main": "/dist/adesktop.js",
+  "main": "/dist/adesktop.min.js",
   "scripts": {
     "test": "tsc",
     "dev": "tsc && uglifyjs --compress --"
