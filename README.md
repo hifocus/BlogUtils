@@ -4,7 +4,7 @@ This repository is aim to consist a series of JavaScript/CSS snippets that provi
 
 Each snippet will be contained in a separate folder, and will be published as either a NPM package or to provide a jsDelivr link.
 
-Please be advise snippets of this repository may not necessarily be written by myself; it may be from another author. If direct copy and paste is involve, the origin of the code will be marked. 
+Please be advise snippets of this repository may not necessarily be written by myself; it may be from another author. If direct copy and paste is involved, the origin of the code will be marked. 
 
 This repository is available solely based on the spirit of sharing and for convenience. Not of the snippets involve advanced programming skills/methodology.
 
