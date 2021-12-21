@@ -1,6 +1,6 @@
 {
   "name": "adesktop",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple code to run Adsense on desktop only",
   "main": "/dist/adesktop.min.js",
   "scripts": {
