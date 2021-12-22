@@ -38,7 +38,7 @@ jobs:
           git config --local user.email "i@focuschen.com"
           git config --local user.name "hifocus"
           git add dist/* -f
-          git commit -m "complete auto-compile task"
+          git commit -m "complete auto-compile task" --allow-empty
           
       - name: Push changes
         uses: ad-m/github-push-action@master
