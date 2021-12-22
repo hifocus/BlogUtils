@@ -8,14 +8,10 @@ As screens on mobile devices are small enough, for readability, I don't like dis
 
 ### Usage
 
-> *As a result of a publishing error, this script on NPM will only be available after 2021.12.22*
->
-> *During this time, `https://hifocus.github.io/BlogUtils/adesktop/dist/adesktop.min.js` may be used. This file does not guarantee availability after the date above.*
-
 #### One Liner
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/adesktop"></script>
+<script src="https://cdn.jsdelivr.net/npm/adesktop@1"></script>
 <script>importAd('ca-pub-xxxxxxxxxx')</script>
 ```
 
@@ -23,11 +19,11 @@ As screens on mobile devices are small enough, for readability, I don't like dis
 
 ```html
 <!-- use jsDelivr -->
-<script src="https://cdn.jsdelivr.net/npm/adesktop"></script>
+<script src="https://cdn.jsdelivr.net/npm/adesktop@1"></script>
 <script>importAd(publisherID, devStatus, platform)</script>
 
 <!-- use UNPKG -->
-<!-- <script src="https://unpkg.com/adesktop"></script> -->
+<!-- <script src="https://unpkg.com/adesktop@1"></script> -->
 ```
 #### Arguments
 
@@ -41,7 +37,7 @@ The function of the script is achieved by calling the `importAd()` function. The
 
 > Please note that all arguments are strings, so accompany them with `''`.
 
-##### Examples
+#### Examples
 
 Display ads on **desktop**, console log **wanted**:
 
