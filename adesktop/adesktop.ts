@@ -1,9 +1,16 @@
-function importAd(publisherID, devStatus, platform) {
-    if (typeof publisherID == 'undefined' || publisherID === null) {
-        console.error('Publisher ID is undefined, the script will not run.') // throw an error if the publisher ID is undefined
+function importAd(...args) {
+    const publisherID = args[0];
+    const restArgs = args[1] || args[2]
+    if (typeof publisherID == 'undefined' && publisherID === null) {
+        throw new Error('Publisher ID is undefined, the script will not run.') // throw an error if the publisher ID is undefined
     }
-    else {
-        const pubid = (!publisherID.includes('ca-pub-') || publisherID.match(/^[0-9]+$/)) ? 'ca-pub-' + publisherID : publisherID;
+    else if (![typeof args[1], typeof args[2]].every(x => ['string', 'undefined'].includes(x))) { // see if any of the args has the type other than string or undefined
+        throw new Error('The 2nd & 3rd argument must be a string or undefined.') // throw an error if the second argument is not a string
+        }
+    const devStatus = (args[1] === 'dev') ? 'dev' : args[2];
+    const platform = (args[1].toLowerCase() === 'mobile') ? 'mobile' : args[2];
+
+        const pubid = (!publisherID.includes('ca-pub-') && publisherID.match(/^[0-9]+$/)) ? 'ca-pub-' + publisherID : publisherID;
         const adjs = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'; //adsense base url
         const wholelink = adjs + '?client=' + pubid;
         const adscript = document.createElement('script');
@@ -32,5 +39,8 @@ function importAd(publisherID, devStatus, platform) {
                     runAds();
                 }
         }
-    }
+    console.log(`Debugging info:
+    Publisher ID: ${pubid}
+    Dev Status: ${devStatus}
+    Platform: ${platform}`)
 }
