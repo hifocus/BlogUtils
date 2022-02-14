@@ -4,7 +4,7 @@ function importAd(...args) {
     if (typeof publisherID == 'undefined' && publisherID === null) {
         throw new Error('Publisher ID is undefined, the script will not run.'); // throw an error if the publisher ID is undefined
     }
-    else if ([typeof args[1], typeof args[2]].every(x => ['string', 'undefined'].includes(x))) {
+    else if (![typeof args[1], typeof args[2]].every(x => ['string', 'undefined'].includes(x))) { // see if any of the args has the type other than string or undefined
         throw new Error('The 2nd & 3rd argument must be a string or undefined.'); // throw an error if the second argument is not a string
     }
     const devStatus = (args[1] === 'dev') ? 'dev' : args[2];
